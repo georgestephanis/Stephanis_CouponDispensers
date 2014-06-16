@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Stephanis_CouponDispensers>
+			<version>1.0.0</version>
+		</Stephanis_CouponDispensers>
+	</modules>
+	<global>
+		<helpers>
+			<coupondispensers>
+				<class>Stephanis_CouponDispensers_Helper</class>
+			</coupondispensers>
+		</helpers>
+		<blocks>
+			<coupondispensers>
+				<class>Stephanis_CouponDispensers_Block</class>
+			</coupondispensers>
+		</blocks>
+		<models>
+			<coupondispensers>
+				<class>Stephanis_CouponDispensers_Model</class>
+			</coupondispensers>
+		</models>
+	</global>
+</config>

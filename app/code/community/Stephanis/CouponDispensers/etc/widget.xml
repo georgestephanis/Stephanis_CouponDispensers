@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<widgets>
+	<coupondispensers_dispenser type="coupondispensers/dispenser">
+		<name>Coupon Dispenser</name>
+		<description type="desc">Dispenses a Coupon Code!</description>
+		<parameters>
+			<tld translate="label">
+				<label>Required Email Domain</label>
+				<required>1</required>
+				<visible>1</visible>
+				<type>text</type>
+			</tld>
+			<rule_id translate="label">
+				<label>Shopping Cart Price Rule</label>
+				<required>1</required>
+				<visible>1</visible>
+				<type>select</type>
+				<source_model>coupondispensers/system_config_source_salesrule</source_model>
+			</rule_id>
+			<pattern translate="label">
+				<label>Coupon Pattern</label>
+				<description>`L` and `D` will be swapped for Letters and Digits</description>
+				<required>0</required>
+				<visible>1</visible>
+				<type>text</type>
+			</pattern>
+			<months translate="label">
+				<label>Frequency</label>
+				<description>They can request a new code every how many months?</description>
+				<required>1</required>
+				<visible>1</visible>
+				<validate>validate-number validate-greater-than-zero</validate>
+				<type>text</type>
+			</months>
+		</parameters>
+	</coupondispensers_dispenser>
+</widgets>
