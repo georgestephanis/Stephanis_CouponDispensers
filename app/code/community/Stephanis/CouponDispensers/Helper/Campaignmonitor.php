@@ -12,7 +12,7 @@ class Stephanis_CouponDispensers_Helper_CampaignMonitor extends Mage_Core_Helper
 		}
 
 		if ( empty( $list_id ) ) {
-			$list_id = $coupon_dispenser;
+			return null; // $list_id = $coupon_dispenser; # $coupon_dispenser was a deprecated default, I think
 		}
 
 		$url = "http://api.createsend.com/api/v3/subscribers/{$list_id}.json?email={$email}";
